@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.ChatContainer {
+  background-color: aquamarine;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ChatBox {
+  background-color: white;
+  height: 90%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+#chat {
+  width: 90%;
+  height: 90%;
+  background-color: rgba(243, 255, 220, 0.5);
+  display: flex;
+  flex-direction: column;
+  padding: 36px;
+  list-style: none;
+}
+
+#self {
+  background-color: rgb(147, 238, 147);
+  place-self: flex-end;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px;
+  border-radius: 10px 10px 0px 10px;
+}
+
+#other {
+  background-color: rgb(194, 183, 183);
+  place-self: flex-start;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px;
+  border-radius: 10px 10px 10px 0px;
+}
+
+#messageForm {
+  width: 90%;
+  display: flex;
+  padding: 10px;
+}
+
+#chatInput {
+  width: 80%;
+  height: 2rem;
+  padding-left: 16px;
+  font-size: medium;
+  margin-right: 1rem;
+  border-radius: 12px;
+  border: olive 1px solid;
+}
+
+#chatInput:focus {
+  width: 80%;
+  outline: none;
+  height: 2rem;
+  padding-left: 16px;
+  font-size: medium;
+  margin-right: 1rem;
+  border-radius: 12px;
+}
+
+#sendMessage {
+  width: 20%;
+  border-radius: 12px;
+  background-color: chartreuse;
+  font-weight: bolder;
+  border: none;
+}
+
+#sendMessage:hover {
+  width: 20%;
+  cursor: pointer;
+  color: white;
+  border-radius: 12px;
+  background-color: rgb(105, 180, 30);
+  font-weight: bolder;
+}
